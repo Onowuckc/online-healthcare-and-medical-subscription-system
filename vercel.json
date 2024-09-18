@@ -1,0 +1,11 @@
+{
+    "builds": [
+      { "src": "admin.py.py", "use": "@vercel/python" },
+      { "src": "patient.py.py", "use": "@vercel/python" }
+    ],
+    "routes": [
+      { "src": "/admin", "dest": "admin.py.py" },
+      { "src": "/patient", "dest": "patient.py.py" }
+    ]
+  }
+  
